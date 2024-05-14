@@ -1,6 +1,9 @@
 //add the required properties to the object below for your order
 const transientState = {
-    foodId: 0
+    "foodLocationsId": 0,
+    "dessertLocationsId": 0,
+    "drinkLocationsId": 0,
+    "toyLocationsId": 0
 }
 
 //add the required setter functions to create your order
