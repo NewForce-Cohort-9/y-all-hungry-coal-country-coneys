@@ -56,4 +56,6 @@ const render = async () => {
     container.innerHTML = containerHTML;
 }
 
+document.addEventListener("newLocationSelectedFoods", render);
+
 render();
