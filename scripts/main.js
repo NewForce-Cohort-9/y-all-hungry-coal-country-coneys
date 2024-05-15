@@ -1,5 +1,6 @@
-//import functions 
+//import functi
 
+import { drinkOptions } from "./drinks.js";
 
 //query selector
 const container = document.querySelector('#container');
@@ -7,7 +8,7 @@ const container = document.querySelector('#container');
 //render function
 const render = async () => {
     // add variables to generate HTML
-
+    const Drinks = await drinkOptions()
     //main HTML string
     const containerHTML = `
     <article class="choices">
@@ -21,7 +22,7 @@ const render = async () => {
         </section>
         <section id="drink" class="choices_item">
         <h2>Drink</h2>
-
+            ${Drinks}
         </section>
         <section id="dessert" class="choices_item">
         <h2>Dessert</h2>

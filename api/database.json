@@ -1,12 +1,143 @@
 {
     "locations": [],
     "foods": [],
-    "drinks": [],
+    "drinks": [
+        {
+            "id": 1, 
+            "name": "Coke",
+            "price": 1.99,
+            "img": "'images/Coke.png'"
+
+        },
+        
+        {
+            "id": 2, 
+            "name": "Mellow Yellow",
+            "price": 1.99,
+            "img": "'/images/MellowYellow.png'"
+
+        },
+        
+        {
+            "id": 3, 
+            "name": "Dr. Pepper",
+            "price": 1.99,
+            "img": "'images/DrPepper.jpg'"
+        },
+
+        {
+            "id": 4,
+            "name": "none",
+            "price": 0,
+            "img": "none"
+        }
+
+    
+    ],
     "desserts": [],
     "toys": [],
     "foodLocations":[],
     "dessertLocations":[],
-    "drinkLocations":[],
+    "drinkLocations":[
+
+        {
+            "id": 1,
+            "locationId": 1,
+            "drinksId": 1, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 2,
+            "locationId": 2,
+            "drinksId": 2, 
+            "quantity": 0
+ 
+        },
+
+        {
+            "id": 3,
+            "locationId": 3,
+            "drinksId": 3, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 4,
+            "locationId": 4,
+            "drinksId": 4, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 5,
+            "locationId": 1,
+            "drinksId": 1, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 6,
+            "locationId": 2,
+            "drinksId": 2, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 7,
+            "locationId": 3,
+            "drinksId": 3, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 8,
+            "locationId": 4,
+            "drinksId": 4, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 9,
+            "locationId": 1,
+            "drinksId": 1, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 10,
+            "locationId": 2,
+            "drinksId": 2, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 11,
+            "locationId": 3,
+            "drinksId": 3, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 12,
+            "locationId": 4,
+            "drinksId": 4, 
+            "quantity": 0
+
+        }
+
+       
+    ],
     "toyLocations":[],
     "orders":[]
 }
