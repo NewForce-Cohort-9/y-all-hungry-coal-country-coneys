@@ -1,0 +1,51 @@
+/*--------- header content CSS: START---------*/
+.header {
+    display: flex;
+    background-color: #045c5a;
+    height: 30rem;
+    border-bottom: 3px solid rgb(182, 182, 40);
+    box-shadow: 5px -7px #002526;
+    background-image: url("../images/headerBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-position: bottom center;
+    margin-bottom: 4rem;
+}
+
+.header--left {
+    float: left;
+    display: flex;
+    object-fit: contain;
+    height: 100%;
+    width: 49%;
+}
+
+.header--logo {
+    display: flex; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 85%;
+    height: 100%;
+    margin-left: 5rem;
+}
+
+
+.header--title {
+    float: right;
+    display: flex;
+    object-fit: contain;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2rem;
+    height: 90%;
+    width: 60%;
+    font-family:'Abel','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6rem;
+    text-shadow: 2px -2px lightsteelblue;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+}
+/*--------- header content CSS: END---------*/

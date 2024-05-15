@@ -1,4 +1,6 @@
 //import functions 
+
+import { LocationOptions } from "./locations.js"
 import { ToyOptions } from "./toys.js"
 
 //query selector
@@ -8,13 +10,14 @@ const container = document.querySelector('#container');
 const render = async () => {
     // add variables to generate HTML
     const toysHTML = await ToyOptions();
+    const locationOptionsHTML = await LocationOptions()
 
     //main HTML string
     const containerHTML = `
     <article class="choices">
         <section id="location">
-        <h2>Location</h2>
-
+            <h2>Choose A Pickup Location</h2>
+            ${locationOptionsHTML}
         </section>
         <section id="food" class="choices_item">
         <h2>Food</h2>
