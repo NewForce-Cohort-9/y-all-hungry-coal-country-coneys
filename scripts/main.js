@@ -1,5 +1,5 @@
 //import functions 
-
+import { ToyOptions } from "./toys.js"
 
 //query selector
 const container = document.querySelector('#container');
@@ -7,6 +7,7 @@ const container = document.querySelector('#container');
 //render function
 const render = async () => {
     // add variables to generate HTML
+    const toysHTML = await ToyOptions();
 
     //main HTML string
     const containerHTML = `
@@ -29,7 +30,7 @@ const render = async () => {
         </section>
         <section id="toy" class="choices_item">
         <h2>Toy</h2>
-
+        ${toysHTML}
         </section>
     </article>
     <article class="orders">
