@@ -8,7 +8,7 @@ const transientState = {
 
 //add the required setter functions to create your order
 export const setFood = (chosenFoodId) => {
-    transientState.foodId = chosenFoodId
+    transientState.foodLocationsId = chosenFoodId
     console.log(transientState)
 }
 
