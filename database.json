@@ -1,0 +1,12 @@
+{
+    "locations": [],
+    "foods": [],
+    "drinks": [],
+    "desserts": [],
+    "toys": [],
+    "foodLocations":[],
+    "dessertLocations":[],
+    "drinkLocations":[],
+    "toyLocations":[],
+    "orders":[]
+}
