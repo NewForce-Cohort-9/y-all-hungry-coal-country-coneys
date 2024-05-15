@@ -1,6 +1,32 @@
 {
     "locations": [],
-    "foods": [],
+    "foods": [
+        {
+            "id": 1,
+            "name": "West Virginia Hot Dog",
+            "description": "chili, slaw, mustard, onions",
+            "price": "0.10",
+            "pic": "https://amazingribs.com/wp-content/uploads/2020/10/west-virginia-slawdog.jpg.webp"
+        },{
+            "id": 2,
+            "name": "Pepperoni Roll",
+            "description": "pepperoni, cheese, roll",
+            "price": "0.05",
+            "pic": "https://www.thecountrycook.net/wp-content/uploads/2023/04/thumbnail-Pepperoni-Rolls-scaled.jpg"
+        },{
+            "id": 3,
+            "name": "Naked Hot Dog",
+            "description": "hot dog. no bun. no sauce. only sodium and meat product.",
+            "price": "0.25",
+            "pic": "https://nasconutrition.com/cdn/shop/products/W07144-main-313Wx313H_1024x.jpg?v=1610659233"
+        },{
+            "id": 4,
+            "name": "None",
+            "description": "void of nothingness",
+            "price": "0",
+            "pic": "https://c02.purpledshub.com/uploads/sites/48/2024/02/bootes-void-hole-in-space.jpg?w=1029&webp=1"
+        }
+    ],
     "drinks": [],
     "desserts": [],
     "toys": [],
