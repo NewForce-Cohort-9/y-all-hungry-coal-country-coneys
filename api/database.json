@@ -2,7 +2,24 @@
     "locations": [],
     "foods": [],
     "drinks": [],
-    "desserts": [],
+    "desserts": [
+        {   "id": 1,
+            "name": "Moonshine Brownies",
+            "description": "",
+            "price": ,
+            "pic": ""
+        },
+        {   "id": 2,
+            "description" : ,
+            "price" :,
+            "pic": 
+        },
+        {   "id": 3,
+            "description" : ,
+            "price" :,
+            "pic": 
+        }
+    ],
     "toys": [],
     "foodLocations":[],
     "dessertLocations":[],
