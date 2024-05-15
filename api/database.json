@@ -5,16 +5,24 @@
     "desserts": [
         {   "id": 1,
             "name": "Moonshine Brownies",
-            "description": "",
-            "price": ,
+            "description": " a fudgy chocolate, vanilla, and a hint of moonshine brownie",
+            "price": 8,
             "pic": ""
         },
         {   "id": 2,
+            "name": "Appalachian Apple Stack Cake",
+            "description" "": ,
+            "price" :,
+            "pic": 
+        },
+        {   "id": 3,
+            "name": "",
             "description" : ,
             "price" :,
             "pic": 
         },
         {   "id": 3,
+            "name": "",
             "description" : ,
             "price" :,
             "pic": 
