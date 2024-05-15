@@ -1,5 +1,5 @@
 //add the required properties to the object below for your order
-const transientState = {
+export const transientState = {
     "locationId": 0,
     "foodLocationsId": 0,
     "dessertLocationsId": 0,

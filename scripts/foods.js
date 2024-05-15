@@ -1,3 +1,4 @@
+import { transientState } from "./transientState.js";
 
 //food options dropdown HTML
 export const foodOptions = async () => {
@@ -12,10 +13,12 @@ export const foodOptions = async () => {
 
  //generate html based on location 
  const foodsAvailable = (change) => {
-            const foodsAvailableArray = foodLocations.filter((foodLocation) => foodLocation.locationId === chosenLocationId) 
+            const foodsAvailableArray = foodLocations.filter((foodLocation) => foodLocation.locationId === parseInt(chosenLocationId)) 
+            console.log(foodsAvailableArray);
+            console.log("HELLO")
         
             foodsHTML = `<select id="foods"><option value=0>Select a Food Option</option>`
-
+//fix this
             const foodString = foodsAvailableArray.map((food) => {
                 return `<option value="${food.id}">${food.name} - ${food.description} - $${food.price}</option>`
                 }
@@ -25,10 +28,10 @@ export const foodOptions = async () => {
     }
 
     // handle location change
-    let chosenLocationId = ''
+    let chosenLocationId = 0;
     const handleLocationChangeForFoods = (change) => {
         if(change.target.id === 'location') {
-            chosenLocationId = parseInt(change.target.id)
+            chosenLocationId = transientState.locationId
            foodsAvailable();
 
             const customEventFoods = new CustomEvent("newLocationSelectedFoods")
