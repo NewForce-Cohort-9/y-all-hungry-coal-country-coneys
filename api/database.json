@@ -3,7 +3,26 @@
     "foods": [],
     "drinks": [],
     "desserts": [],
-    "toys": [],
+    "toys": [
+        {"id": 1,
+        "name": "Playstation 5",
+        "price": 6,
+        "img": "https://media.direct.playstation.com/is/image/sierialto/PS5-Digital-Slim-Hero-Box-US-V2"},
+
+        {"id": 2,
+        "name": "iPad",
+        "price": 5,
+        "img": "https://m.media-amazon.com/images/I/61mjOsFlTbL._AC_SX466_.jpg"},
+
+        {"id": 3,
+        "name": "Bag of Broken Glass",
+        "price": 8,
+        "img": "https://media1.thehungryjpeg.com/thumbs2/ori_3492695_2600b795f3b46ed8a31f20563819784087d441ce_realistic-shattered-glass-transparent-broken-pieces-of-cracked-glassf.jpg"},
+    
+        {"id": 4,
+        "name": "None",
+        "price": 0}
+    ],
     "foodLocations":[],
     "dessertLocations":[],
     "drinkLocations":[],
