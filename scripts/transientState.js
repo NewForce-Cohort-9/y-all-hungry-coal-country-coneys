@@ -1,5 +1,6 @@
 //add the required properties to the object below for your order
 const transientState = {
+    "locationId": 0,
     "foodLocationsId": 0,
     "dessertLocationsId": 0,
     "drinkLocationsId": 0,
@@ -7,17 +8,22 @@ const transientState = {
 }
 
 //add the required setter functions to create your order
-export const setFood = (chosenFoodId) => {
-    transientState.foodId = chosenFoodId
+export const setLocationChoice = (chosenLocationId) => {
+    transientState.locationId = chosenLocationId
     console.log(transientState)
 }
 
+export const setFood = (chosenFoodId) => {
+    transientState.foodId = chosenFoodId
+    console.log(transientState)
+    
+}
 export const setDessert = (chosenDessertId) => {
     transientState.dessertId = chosenDessertId
     console.log(transientState)
 }
 
-export const saveOrder = async () => {
+export const saveOrder = async () => {}
 
     const postOptions = {
         method: "POST",
@@ -26,11 +32,10 @@ export const saveOrder = async () => {
         },
         body: JSON.stringify(transientState)
 
-
 }
 
   // Send the transient state to your API
   const response = await fetch("http://localhost:8088/orders", postOptions)
   const customEvent = new CustomEvent("newOrder")
   document.dispatchEvent(customEvent)
-}
+

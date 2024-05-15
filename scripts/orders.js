@@ -6,7 +6,7 @@ export const customOrders = async () => {
 
     
     let CustomOrdersHTML = orders.map((order) => {
-        const orderPrice = order.food.price + order.interior.price + order.drink.price + order.dessert.price + order.toy.price
+        const orderPrice = order.food.price + order.drink.price + order.dessert.price + order.toy.price
         
         const totalCustomOrder = orderPrice.toLocaleString("en-US", {
             style: "currency",

@@ -15,7 +15,7 @@ const handleDessertChange = (event) => {
 export const dessertOptions = async() => {
     const response = await fetch("http://localhost:8088/desserts")
     const desserts = await response.json()
-    
+    document.addEventListener("change", handleLocationChange)
     document.addEventListener("change", handleDessertChange)
     let html = ""
 
