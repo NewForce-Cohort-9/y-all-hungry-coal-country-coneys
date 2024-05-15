@@ -1,4 +1,6 @@
 //import functions 
+import {dessertOptions} from "./desserts.js"
+import { customOrders } from "./orders.js";
 
 
 //query selector
@@ -7,6 +9,8 @@ const container = document.querySelector('#container');
 //render function
 const render = async () => {
     // add variables to generate HTML
+const dessertHTML = await dessertOptions()
+const ordersHTML = await customOrders()
 
     //main HTML string
     const containerHTML = `
@@ -25,7 +29,7 @@ const render = async () => {
         </section>
         <section id="dessert" class="choices_item">
         <h2>Dessert</h2>
-
+        ${dessertHTML}
         </section>
         <section id="toy" class="choices_item">
         <h2>Toy</h2>
@@ -34,7 +38,7 @@ const render = async () => {
     </article>
     <article class="orders">
     <div class="orders_list">
-    
+    ${ordersHTML}
     </div>
     <div class="orderTotal">
     
