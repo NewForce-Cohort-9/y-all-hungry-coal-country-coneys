@@ -1,36 +1,110 @@
 {
-    "locations": [],
-    "foods": [
+    "locations": [
         {
             "id": 1,
-            "name": "West Virginia Hot Dog",
-            "description": "chili, slaw, mustard, onions",
-            "price": "0.10",
-            "pic": "https://amazingribs.com/wp-content/uploads/2020/10/west-virginia-slawdog.jpg.webp"
-        },{
+            "cityStreet": "Capitol Street - Charleston, WV 25301"
+        },
+        {
             "id": 2,
-            "name": "Pepperoni Roll",
-            "description": "pepperoni, cheese, roll",
-            "price": "0.05",
-            "pic": "https://www.thecountrycook.net/wp-content/uploads/2023/04/thumbnail-Pepperoni-Rolls-scaled.jpg"
-        },{
+            "cityStreet": "Pullman Square - Huntington, WV 25701"
+        },
+        {
             "id": 3,
-            "name": "Naked Hot Dog",
-            "description": "hot dog. no bun. no sauce. only sodium and meat product.",
-            "price": "0.25",
-            "pic": "https://nasconutrition.com/cdn/shop/products/W07144-main-313Wx313H_1024x.jpg?v=1610659233"
-        },{
-            "id": 4,
-            "name": "None",
-            "description": "void of nothingness",
-            "price": "0",
-            "pic": "https://c02.purpledshub.com/uploads/sites/48/2024/02/bootes-void-hole-in-space.jpg?w=1029&webp=1"
+            "cityStreet": "Mall Road - Morgantown, WV 26501"
         }
     ],
+    "foods": [
+        {
+        "id": 1,
+        "name": "West Virginia Hot Dog",
+        "description": "chili, slaw, mustard, onions",
+        "price": "0.10",
+        "pic": "https://amazingribs.com/wp-content/uploads/2020/10/west-virginia-slawdog.jpg"
+    },{
+        "id": 2,
+        "name": "Pepperoni Roll",
+        "description": "pepperoni, cheese, roll",
+        "price": "0.05",
+        "pic": "https://www.thecountrycook.net/wp-content/uploads/2023/04/thumbnail-Pepperoni-Rolls-scaled.jpg"
+    },{
+        "id": 3,
+        "name": "Naked Hot Dog",
+        "description": "hot dog. no bun. no sauce. only sodium and meat product.",
+        "price": "0.25",
+        "pic": "https://nasconutrition.com/cdn/shop/products/W07144-main-313Wx313H_1024x.jpg?v=1610659233"
+    },{
+        "id": 4,
+        "name": "None",
+        "description": "void of nothingness",
+        "price": "0",
+        "pic": "https://c02.purpledshub.com/uploads/sites/48/2024/02/bootes-void-hole-in-space.jpg?w=1029&webp=1"
+    }],
     "drinks": [],
     "desserts": [],
     "toys": [],
-    "foodLocations":[],
+    "foodLocations":[
+        {
+            "id": 1,
+            "locationsId": 1,
+            "foodsId": 1,
+            "quantity": 0
+        },{
+            "id": 2,
+            "locationsId": 1,
+            "foodsId": 2,
+            "quantity": 0
+        },{
+            "id": 3,
+            "locationsId": 1,
+            "foodsId": 3,
+            "quantity": 0
+        },{
+            "id": 4,
+            "locationsId": 1,
+            "foodsId": 4,
+            "quantity": 0
+        },{
+            "id": 5,
+            "locationsId": 2,
+            "foodsId": 1,
+            "quantity": 0
+        },{
+            "id": 6,
+            "locationsId": 2,
+            "foodsId": 2,
+            "quantity": 0
+        },{
+            "id": 7,
+            "locationsId": 2,
+            "foodsId": 3,
+            "quantity": 0
+        },{
+            "id": 8,
+            "locationsId": 2,
+            "foodsId": 4,
+            "quantity": 0
+        },{
+            "id": 9,
+            "locationsId": 3,
+            "foodsId": 1,
+            "quantity": 0
+        },{
+            "id": 10,
+            "locationsId": 3,
+            "foodsId": 2,
+            "quantity": 0
+        },{
+            "id": 11,
+            "locationsId": 3,
+            "foodsId": 3,
+            "quantity": 0
+        },{
+            "id": 12,
+            "locationsId": 3,
+            "foodsId": 4,
+            "quantity": 0
+        }
+    ],
     "dessertLocations":[],
     "drinkLocations":[],
     "toyLocations":[],
