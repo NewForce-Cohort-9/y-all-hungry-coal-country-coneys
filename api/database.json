@@ -45,64 +45,64 @@
     "foodLocations":[
         {
             "id": 1,
-            "locationsId": 1,
-            "foodsId": 1,
-            "quantity": 0
+            "locationId": 1,
+            "foodId": 1,
+            "quantity": 5
         },{
             "id": 2,
-            "locationsId": 1,
-            "foodsId": 2,
-            "quantity": 0
+            "locationId": 1,
+            "foodId": 2,
+            "quantity": 4
         },{
             "id": 3,
-            "locationsId": 1,
-            "foodsId": 3,
-            "quantity": 0
+            "locationId": 1,
+            "foodId": 3,
+            "quantity": 5
         },{
             "id": 4,
-            "locationsId": 1,
-            "foodsId": 4,
-            "quantity": 0
+            "locationId": 1,
+            "foodId": 4,
+            "quantity": 4
         },{
             "id": 5,
-            "locationsId": 2,
-            "foodsId": 1,
-            "quantity": 0
+            "locationId": 2,
+            "foodId": 1,
+            "quantity": 7
         },{
             "id": 6,
-            "locationsId": 2,
-            "foodsId": 2,
-            "quantity": 0
+            "locationId": 2,
+            "foodId": 2,
+            "quantity": 8
         },{
             "id": 7,
-            "locationsId": 2,
-            "foodsId": 3,
-            "quantity": 0
+            "locationId": 2,
+            "foodId": 3,
+            "quantity": 7
         },{
             "id": 8,
-            "locationsId": 2,
-            "foodsId": 4,
-            "quantity": 0
+            "locationId": 2,
+            "foodId": 4,
+            "quantity": 8
         },{
             "id": 9,
-            "locationsId": 3,
-            "foodsId": 1,
-            "quantity": 0
+            "locationId": 3,
+            "foodId": 1,
+            "quantity": 4
         },{
             "id": 10,
-            "locationsId": 3,
-            "foodsId": 2,
-            "quantity": 0
+            "locationId": 3,
+            "foodId": 2,
+            "quantity": 5
         },{
             "id": 11,
-            "locationsId": 3,
-            "foodsId": 3,
-            "quantity": 0
+            "locationId": 3,
+            "foodId": 3,
+            "quantity": 4
         },{
             "id": 12,
-            "locationsId": 3,
-            "foodsId": 4,
-            "quantity": 0
+            "locationId": 3,
+            "foodId": 4,
+            "quantity": 5
         }
     ],
     "dessertLocations":[],

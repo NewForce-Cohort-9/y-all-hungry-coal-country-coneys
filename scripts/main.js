@@ -8,8 +8,9 @@ const container = document.querySelector('#container');
 //render function
 const render = async () => {
     // add variables to generate HTML
+    
+    const locationOptionsHTML = await LocationOptions();
     const Foods = await foodOptions();
-    const locationOptionsHTML = await LocationOptions()
 
     //main HTML string
     const containerHTML = `
