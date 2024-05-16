@@ -1,5 +1,5 @@
 //add the required properties to the object below for your order
-const transientState = {
+export const transientState = {
     "locationId": 0,
     "foodLocationId": 0,
     "dessertLocationId": 0,
@@ -14,7 +14,7 @@ export const setLocationChoice = (chosenLocationId) => {
 }
 
 export const setFood = (chosenFoodId) => {
-    transientState.foodId = chosenFoodId
+    transientState.foodLocationId = chosenFoodId
     console.log(transientState)
 }
 
