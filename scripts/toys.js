@@ -13,8 +13,8 @@ export const ToyOptions = async () => {
     const response = await fetch('http://localhost:8088/toys')
     const toys = await response.json()
 
-
     document.addEventListener("change", handleToyChange)
+    
 
     let toysHTML = '<select id="toys"><option value=0>Choose a Happy Toy</option>'
 
