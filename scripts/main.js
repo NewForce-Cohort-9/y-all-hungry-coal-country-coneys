@@ -2,6 +2,7 @@
 
 import { drinkOptions } from "./drinks.js";
 //import functions 
+import { foodOptions } from "./foods.js";
 import { LocationOptions } from "./locations.js"
 
 //query selector
@@ -10,19 +11,23 @@ const container = document.querySelector('#container');
 //render function
 const render = async () => {
     // add variables to generate HTML
+    
+    
+    
+    const locationOptionsHTML = await LocationOptions();
+    const Foods = await foodOptions();
     const Drinks = await drinkOptions()
-    const locationOptionsHTML = await LocationOptions()
-
     //main HTML string
     const containerHTML = `
     <article class="choices">
         <section id="location">
             <h2>Choose A Pickup Location</h2>
             ${locationOptionsHTML}
+            <p id="selectedLocation"></p>
         </section>
         <section id="food" class="choices_item">
         <h2>Food</h2>
-
+        ${Foods}
         </section>
         <section id="drink" class="choices_item">
         <h2>Drink</h2>
@@ -57,5 +62,7 @@ const render = async () => {
     `
     container.innerHTML = containerHTML;
 }
+
+document.addEventListener("newLocationSelectedFoods", render);
 
 render();
