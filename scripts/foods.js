@@ -17,7 +17,10 @@ const handleLocationChangeForFoods = (change) => {
 //handle food change - **************
 const handleFoodChange = (changeFood) => {
     if(changeFood.target.id === 'foods') {
-        setFood(parseInt(changeFood.target.value))
+        setFood(parseInt(changeFood.target.value));
+       const orderFood = (changeFood) => {
+            return `<div>${food.name}</div>`
+       };
     }
 };
 
@@ -42,9 +45,12 @@ export const foodOptions = async (change) => {
     for (let i=0; i < foodsAvailableArray.length; i++) {
         for (const food of foods) {
             if (foodsAvailableArray[i].foodId === food.id) {
-               foodsHTML += `<option value="${foodsAvailableArray[i].id}">
-               ${food.name} - ${food.description} - $${food.price} - qty: ${foodsAvailableArray[i].quantity}
-               </option>`
+               foodsHTML += `<option value="${foodsAvailableArray[i].id}"
+                                data-name="${food.name}"
+                                data-description="${food.description}"
+                                data-price="${food.price}">
+                                ${food.name} - ${food.description} - $${food.price} - qty: ${foodsAvailableArray[i].quantity}
+                                </option>`
             }
         }
     }

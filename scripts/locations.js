@@ -3,13 +3,15 @@ import { setLocationChoice } from "./transientState.js"
 const response = await fetch("http://localhost:8088/locations")
 const locations = await response.json()
 
+let chosenOption = 0;
+
     // Creating function for location change event and string output conditional based on 'value' attribute
 const handleLocationChoice = (changeEvent) => {
     let result = document.querySelector('#selectedLocation')
 
     if (changeEvent.target.id === "location") {
         let vArray = changeEvent.target.value.split("_")
-       const chosenOption = parseInt(vArray[0])
+       chosenOption = parseInt(vArray[0])
        setLocationChoice(chosenOption)
     if (chosenOption > 0) {
         console.log(vArray[1])
@@ -35,7 +37,7 @@ const handleLocationChoice = (changeEvent) => {
 
     const optionsArray = locations.map(
         (location) => {
-            return `<option value="${location.id}_${location.cityStreet}">${location.cityStreet}</option>`
+            return `<option value="${location.id}_${location.cityStreet}" ${chosenOption === parseInt(location.id) ? 'selected' : ""}>${location.cityStreet}</option>`
         }
     )
     
