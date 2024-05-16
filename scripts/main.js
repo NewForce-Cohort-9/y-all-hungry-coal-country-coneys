@@ -24,9 +24,7 @@ const render = async () => {
         </section>
         <section id="food" class="choices_item">
             <h2>Food</h2>
-
-        <h2>Food</h2>
-        ${Foods}
+            ${Foods}
         </section>
         <section id="drink" class="choices_item">
             <h2>Drink</h2>
@@ -63,5 +61,6 @@ const render = async () => {
 }
 
 document.addEventListener("newLocationSelectedFoods", render);
+document.addEventListener("newLocationSelectedToys", render);
 
 render();

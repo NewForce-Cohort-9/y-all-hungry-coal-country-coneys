@@ -13,6 +13,7 @@
             "cityStreet": "Mall Road - Morgantown, WV 26501"
         }
     ],
+
     "foods": [
         {
         "id": 1,
@@ -39,8 +40,11 @@
         "price": "0",
         "pic": "https://c02.purpledshub.com/uploads/sites/48/2024/02/bootes-void-hole-in-space.jpg?w=1029&webp=1"
     }],
+
     "drinks": [],
+
     "desserts": [],
+
     "toys": [
         {"id": 1,
         "name": "Playstation 5",
@@ -125,53 +129,72 @@
             "quantity": 5
         }
     ],
+
     "dessertLocations":[],
+
     "drinkLocations":[],
+
     "toyLocations":[
         {"id": 1,
         "locationId": 1,
         "toyId": 1,
-        "quantity": 0},
+        "quantity": 3},
 
         {"id": 2,
         "locationId": 1,
         "toyId": 2,
-        "quantity": 0},
+        "quantity": 3},
 
         {"id": 3,
         "locationId": 1,
         "toyId": 3,
-        "quantity": 0},
+        "quantity": 3},
 
         {"id": 4,
         "locationId": 2,
         "toyId": 1,
-        "quantity": 0},
+        "quantity": 3},
 
         {"id": 5,
         "locationId": 2,
         "toyId": 2,
-        "quantity": 0},
+        "quantity": 3},
 
         {"id": 6,
         "locationId": 2,
         "toyId": 3,
-        "quantity": 0},
+        "quantity": 3},
 
         {"id": 7,
         "locationId": 3,
         "toyId": 1,
-        "quantity": 0},
+        "quantity": 3},
 
         {"id": 8,
         "locationId": 3,
         "toyId": 2,
-        "quantity": 0},
+        "quantity": 3},
 
         {"id": 9,
         "locationId": 3,
         "toyId": 3,
-        "quantity": 0}
+        "quantity": 3},
+
+        {"id": 10,
+        "locationId": 1,
+        "toyId": 4,
+        "quantity": 100},
+
+        {"id": 11,
+        "locationId": 2,
+        "toyId": 4,
+        "quantity": 100},
+
+        {"id": 12,
+        "locationId": 3,
+        "toyId": 4,
+        "quantity": 100}
     ],
+
     "orders":[]
 }
