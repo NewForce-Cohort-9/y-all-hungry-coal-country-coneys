@@ -26,7 +26,7 @@ export const dessertOptions = async() => {
     html += '<option value="0">Select a dessert</option>'
 
     const dessertChosen = desserts.map( (dessert) => {
-            return `<option value="${dessert.id}">${dessert.name}</option>`
+            return `<option value="${dessert.id}">${dessert.name} - ${dessert.description} - ${dessert.price}</option>`
         }
     )
     // const chosenLocation = dessertLocations.map((dessertLocation) => {
