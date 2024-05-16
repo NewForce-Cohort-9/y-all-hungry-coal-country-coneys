@@ -15,11 +15,11 @@ const handleLocationChangeForFoods = (change) => {
 };
 
 //handle food change - **************
-// const handleFoodChange = (changeFood) => {
-//     if(changeFood.target.id === 'foods') {
-//         const setFood()
-//     }
-// };
+const handleFoodChange = (changeFood) => {
+    if(changeFood.target.id === 'foods') {
+        setFood(parseInt(changeFood.target.value))
+    }
+};
 
 //generate html based on location 
 export const foodOptions = async (change) => {
@@ -29,7 +29,7 @@ export const foodOptions = async (change) => {
     const foodLocations = await response2.json();
 
     document.addEventListener("change", handleLocationChangeForFoods);
-    // document.addEventListener("change", handleFoodChange);
+    document.addEventListener("change", handleFoodChange);
 
     let foodsHTML='';
 
@@ -42,7 +42,9 @@ export const foodOptions = async (change) => {
     for (let i=0; i < foodsAvailableArray.length; i++) {
         for (const food of foods) {
             if (foodsAvailableArray[i].foodId === food.id) {
-               foodsHTML += `<option value="${food.id}">${food.name} - ${food.description} - $${food.price} - qty: ${foodsAvailableArray[i].quantity}</option>`
+               foodsHTML += `<option value="${foodsAvailableArray[i].id}">
+               ${food.name} - ${food.description} - $${food.price} - qty: ${foodsAvailableArray[i].quantity}
+               </option>`
             }
         }
     }
