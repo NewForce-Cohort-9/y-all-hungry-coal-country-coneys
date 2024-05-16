@@ -4,15 +4,6 @@ import { setFood } from "./transientState.js";
 // set global variables
 let chosenLocationId = 0;
 
-// //default foods HTML
-// export const foodOptions = () => {
-
-//     foodsHTML = `<select id="foods"><option>Please select a location first</option></select>`
-//     document.addEventListener("change", handleLocationChangeForFoods);
-
-//     return foodsHTML;
-// };
-
 // handle location change
 const handleLocationChangeForFoods = (change) => {
     if(change.target.id === 'location') {
@@ -55,7 +46,6 @@ export const foodOptions = async (change) => {
             }
         }
     }
-    // foodsHTML += foodString.join("");
     foodsHTML += '</select>';
 
     return foodsHTML;
