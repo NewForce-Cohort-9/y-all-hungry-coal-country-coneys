@@ -18,6 +18,7 @@ const render = async () => {
         <section id="location">
             <h2>Choose A Pickup Location</h2>
             ${locationOptionsHTML}
+            <p id="selectedLocation"></p>
         </section>
         <section id="food" class="choices_item">
         <h2>Food</h2>
