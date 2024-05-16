@@ -18,6 +18,11 @@ export const setFood = (chosenFoodId) => {
     console.log(transientState)
 }
 
+export const setDrinkChoice = (chosenDrinkId) => {
+    transientState.drinkId = chosenDrinkId
+    console.log(transientState)
+}
+
 export const saveOrder = async () => {
 
     const postOptions = {

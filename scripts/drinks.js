@@ -1,20 +1,18 @@
+
+
+//import your transient state
+import { setDrinkChoice } from "./transientState.js";
+
+
+//export your data from the data base and get your array
+
 export const drinkOptions = async () => {
     const response = await fetch("http://localhost:8088/drinks")
     //const response2 = await fetch("http://localhost:8088/drinkLocations")
     const drinks = await response.json()
 
 
-    // const handleLocationChange - () =. {
-
-    // }
-    
-    // const changeHandler = (changeEvent) => {
-    //     if (changeEvent.target.id === "singleDrink") {
-    //        const chosenOption = changeEvent.target.value
-    //        console.log(parseInt(chosenOption))
-    //     }
-    //  }
-
+ //html to print your drop down menu and options for drinks
 
 
     let drinkOptionsHTML = `<select id="singleDrink">
