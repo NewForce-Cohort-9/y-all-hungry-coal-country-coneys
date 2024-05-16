@@ -1,7 +1,6 @@
 //import functions 
 import {dessertOptions} from "./desserts.js"
-import { customOrders } from "./orders.js";
-
+import { customOrders } from "./orders.js"
 import { LocationOptions } from "./locations.js"
 
 //query selector

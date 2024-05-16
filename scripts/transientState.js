@@ -23,7 +23,7 @@ export const setDessert = (chosenDessertId) => {
     console.log(transientState)
 }
 
-export const saveOrder = async () => {}
+export const saveOrder = async () => {
 
     const postOptions = {
         method: "POST",
@@ -38,4 +38,4 @@ export const saveOrder = async () => {}
   const response = await fetch("http://localhost:8088/orders", postOptions)
   const customEvent = new CustomEvent("newOrder")
   document.dispatchEvent(customEvent)
-
+}
