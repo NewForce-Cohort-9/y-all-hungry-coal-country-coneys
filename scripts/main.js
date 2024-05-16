@@ -11,9 +11,11 @@ const container = document.querySelector('#container');
 //render function
 const render = async () => {
     // add variables to generate HTML
-    
     const locationOptionsHTML = await LocationOptions();
     const Foods = await foodOptions();
+    const dessertHTML = await dessertOptions()
+    const ordersHTML = await customOrders()
+    const orderButtonHTML = await saveOrderPlaced()
 
     //main HTML string
     const containerHTML = `
@@ -50,7 +52,7 @@ const render = async () => {
     <article class="buttons">
   
         <div class="placeOrder">
-        ${orderButtonHTML }
+        ${orderButtonHTML}
         </div>
         <div class="startOver">
         
