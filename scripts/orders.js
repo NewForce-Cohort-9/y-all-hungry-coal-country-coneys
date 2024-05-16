@@ -1,3 +1,4 @@
+import { saveOrder } from "./transientState.js"
 
 export const customOrders = async () => {
 //     // const fetchResponse = await fetch("http://localhost:8088/orders?_expand=food&_expand=drink&_expand=dessert&_expand=toy");
@@ -18,4 +19,19 @@ export const customOrders = async () => {
 // );
 
 //     return CustomOrdersHTML.join("")
+}
+
+
+const handleOrderPlacedClick = (clickEvent) => {
+    if (clickEvent.target.id === "saveOrderButton") {
+        saveOrder()
+    }
+}
+
+export const saveOrderPlaced = () => {
+
+document.addEventListener("click", handleOrderPlacedClick)
+
+return "<div><button id ='saveOrderButton'>Place Order</button></div>"
+
 }

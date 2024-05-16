@@ -2,6 +2,7 @@
 import {dessertOptions} from "./desserts.js"
 import { customOrders } from "./orders.js"
 import { LocationOptions } from "./locations.js"
+import {saveOrderPlaced} from "./orders.js"
 
 //query selector
 const container = document.querySelector('#container');
@@ -9,9 +10,11 @@ const container = document.querySelector('#container');
 //render function
 const render = async () => {
     // add variables to generate HTML
+const locationOptionsHTML = await LocationOptions()
 const dessertHTML = await dessertOptions()
 const ordersHTML = await customOrders()
-const locationOptionsHTML = await LocationOptions()
+const orderButtonHTML = await saveOrderPlaced()
+
 
     //main HTML string
     const containerHTML = `
@@ -48,7 +51,7 @@ const locationOptionsHTML = await LocationOptions()
     <article class="buttons">
   
         <div class="placeOrder">
-        
+        ${orderButtonHTML }
         </div>
         <div class="startOver">
         
