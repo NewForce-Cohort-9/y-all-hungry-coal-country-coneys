@@ -37,6 +37,8 @@
     object-fit: contain;
     justify-content: center;
     flex-direction: column;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
     margin-left: 2rem;
     height: 90%;
     width: 60%;
