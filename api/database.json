@@ -154,113 +154,76 @@
       "id": 1,
       "locationId": 1,
       "dessertId": 1,
-      "quantity": 0
+      "quantity": 10
     },
     {
       "id": 2,
       "locationId": 1,
       "dessertId": 2,
-      "quantity": 0
+      "quantity": 8
     },
     {
       "id": 3,
       "locationId": 1,
       "dessertId": 3,
-      "quantity": 0
+      "quantity": 10
     },
     {
       "id": 4,
       "locationId": 1,
       "dessertId": 4,
-      "quantity": 0
+      "quantity": 9
     },
     {
       "id": 5,
       "locationId": 2,
       "dessertId": 1,
-      "quantity": 0
+      "quantity": 7
     },
     {
       "id": 6,
       "locationId": 2,
       "dessertId": 2,
-      "quantity": 0
+      "quantity": 13
     },
     {
       "id": 7,
       "locationId": 2,
       "dessertId": 3,
-      "quantity": 0
+      "quantity": 6
     },
     {
       "id": 8,
       "locationId": 2,
       "dessertId": 4,
-      "quantity": 0
+      "quantity": 8
     },
     {
       "id": 9,
       "locationId": 3,
       "dessertId": 1,
-      "quantity": 0
+      "quantity": 5
     },
     {
       "id": 10,
       "locationId": 3,
       "dessertId": 2,
-      "quantity": 0
+      "quantity": 7
     },
     {
       "id": 11,
       "locationId": 3,
       "dessertId": 3,
-      "quantity": 0
+      "quantity": 9
     },
     {
       "id": 12,
       "locationId": 3,
       "dessertId": 4,
-      "quantity": 0
+      "quantity": 10
     }
   ],
   "drinkLocations": [],
   "toyLocations": [],
-  "orders": [
-    {
-      "locationId": 1,
-      "foodLocationId": 1,
-      "dessertLocationId": 0,
-      "drinkLocationId": 0,
-      "toyLocationId": 0,
-      "dessertId": 3,
-      "id": 1
-    },
-    {
-      "locationId": 1,
-      "foodLocationId": 3,
-      "dessertLocationId": 0,
-      "drinkLocationId": 0,
-      "toyLocationId": 0,
-      "dessertId": 2,
-      "id": 2
-    },
-    {
-      "locationId": 2,
-      "foodLocationId": 5,
-      "dessertLocationId": 0,
-      "drinkLocationId": 0,
-      "toyLocationId": 0,
-      "dessertId": 2,
-      "id": 3
-    },
-    {
-      "locationId": 2,
-      "foodLocationId": 8,
-      "dessertLocationId": 0,
-      "drinkLocationId": 0,
-      "toyLocationId": 0,
-      "dessertId": 2,
-      "id": 4
-    }
-  ]
+  "orders": []
 }

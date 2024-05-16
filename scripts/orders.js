@@ -1,5 +1,6 @@
 import { saveOrder } from "./transientState.js"
 
+
 export const customOrders = async () => {
 //     // const fetchResponse = await fetch("http://localhost:8088/orders?_expand=food&_expand=drink&_expand=dessert&_expand=toy");
 //     const orders = await fetchResponse.json();
@@ -21,7 +22,7 @@ export const customOrders = async () => {
 //     return CustomOrdersHTML.join("")
 }
 
-
+//place order button html
 const handleOrderPlacedClick = (clickEvent) => {
     if (clickEvent.target.id === "saveOrderButton") {
         saveOrder()
