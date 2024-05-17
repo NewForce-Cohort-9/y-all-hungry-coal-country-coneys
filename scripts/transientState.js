@@ -28,9 +28,6 @@ export const setToy = (chosenToy) => {
     console.log(transientState)
 }
 
-
-
-
 export const saveOrder = async () => {
 
     const postOptions = {

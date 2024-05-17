@@ -14,18 +14,16 @@ const handleLocationChangeForFoods = (change) => {
     }
 };
 
-//handle food change - **************
+//handle food change 
 const handleFoodChange = (changeFood) => {
     if(changeFood.target.id === 'foods') {
-        setFood(parseInt(changeFood.target.value));
-       const orderFood = (changeFood) => {
-            return `<div>${food.name}</div>`
+       const foodSelected =  setFood(parseInt(changeFood.target.value))
+       document.querySelector(".orders_list").innerHTML += foodSelected;
        };
-    }
-};
+    };
 
 //generate html based on location 
-export const foodOptions = async (change) => {
+export const foodOptions = async () => {
     const response = await fetch('http://localhost:8088/foods');
     const response2 = await fetch('http://localhost:8088/foodLocations');
     const foods = await response.json();
