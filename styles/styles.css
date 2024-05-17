@@ -53,6 +53,16 @@
 }
 /*--------- header content CSS: END---------*/
 
+/*--------- body content CSS: START---------*/
+
+body {
+    background: radial-gradient(ivory, tan, rgb(173, 169, 169))
+}
+
+
+
+/*--------- body content CSS: END---------*/
+
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
