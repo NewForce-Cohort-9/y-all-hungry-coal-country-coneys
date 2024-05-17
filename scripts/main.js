@@ -89,5 +89,6 @@ document.addEventListener("foodChanged", render);
 document.addEventListener("drinkChanged", render);
 document.addEventListener("dessertChanged", render);
 document.addEventListener("toyChanged", render);
+document.addEventListener("newOrder", render);
 
 render();
