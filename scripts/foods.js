@@ -17,8 +17,7 @@ const handleLocationChangeForFoods = (change) => {
 //handle food change 
 const handleFoodChange = (changeFood) => {
     if(changeFood.target.id === 'foods') {
-       const foodSelected =  setFood(parseInt(changeFood.target.value))
-       document.querySelector(".orders_list").innerHTML += foodSelected;
+       setFood(parseInt(changeFood.target.value))
        };
     };
 
