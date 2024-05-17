@@ -21,8 +21,7 @@ export const selectedFood = async () => {
             foodLocation.id === transientState.foodLocationId)
     
        let foodSelectedHTML = `<div>${foodSelected?.food.name} <img src="${foodSelected?.food.pic}"></div>`
-    
-       return foodSelectedHTML;
+       return foodSelectedHTML
     }
     else {
         let foodSelectedHTML = ""
@@ -48,13 +47,13 @@ export const selectedDrink = async () => {
 
     document.addEventListener("change", handleDrinkChange);
     
+    let drinkSelectedHTML = ''
     if (transientState.drinkLocationId !== 0) {
         const drinkSelected = drinkLocations.find((drinkLocation) =>
             drinkLocation.id === transientState.drinkLocationId)
     
-       let drinkSelectedHTML = `<div>${drinkSelected?.drink.name} <img src="${drinkSelected?.drink.img}"></div>`
-    
-       return drinkSelectedHTML;
+      let drinkSelectedHTML = `<div>${drinkSelected?.drink.name} <img src="${drinkSelected?.drink.img}"></div>`
+      return drinkSelectedHTML
     }
     else {
         let drinkSelectedHTML = ""
@@ -79,13 +78,13 @@ export const selectedDessert = async () => {
 
     document.addEventListener("change", handleDessertChange);
 
+    let dessertSelectedHTML = ''
     if (transientState.dessertLocationId !== 0) {
         const dessertSelected = dessertLocations.find((dessertLocation) =>
             dessertLocation.id === transientState.dessertLocationId)
 
        let dessertSelectedHTML = `<div>${dessertSelected?.dessert.name} <img src="${dessertSelected?.dessert.pic}"></div>`
-
-       return dessertSelectedHTML;
+       return dessertSelectedHTML
     }
     else {
         let dessertSelectedHTML = ""
@@ -109,13 +108,14 @@ export const selectedToy = async () => {
 
     document.addEventListener("change", handleToyChange);
     
+    let toySelectedHTML = ''
     if (transientState.toyLocationId !== 0) {
         const toySelected = toyLocations.find((toyLocation) =>
             toyLocation.id === transientState.toyLocationId)
     
-       let toySelectedHTML = `<div>${toySelected?.toy.name} <img src="${toySelected?.toy.img}"></div>`
-    
-       return toySelectedHTML;
+   let toySelectedHTML = `<div>${toySelected?.toy.name} <img src="${toySelected?.toy.img}"></div>`
+   return toySelectedHTML
+   
     }
     else {
         let toySelectedHTML = ""
@@ -160,7 +160,7 @@ export const orderTotal = async () => {
         const drinkSelected = drinkLocations.find((drinkLocation) =>
             drinkLocation.id === transientState.drinkLocationId)
 
-        foodCost = drinkSelected?.drink.price
+        drinkCost = drinkSelected?.drink.price
     }
 
     if (transientState.dessertLocationId !== 0) {
@@ -178,31 +178,25 @@ export const orderTotal = async () => {
     }
 
     orderTotalAmount = foodCost + drinkCost + dessertCost + toyCost
-    orderTotalString += `$${orderTotalAmount}`
+    const orderFormatted = orderTotalAmount.toLocaleString("en-US", {
+        style: "currency",
+        currency: "USD"
+    });
+    orderTotalString += orderFormatted
     orderTotalString += '</div>'
     return orderTotalString
 }
 
 //display order on DOM
     export const customOrders = async () => {
-//     const fetchResponse = await fetch("http://localhost:8088/orders?_expand=food&_expand=drink&_expand=dessert&_expand=toy");
-//     const orders = await fetchResponse.json();
+    // const fetchResponse = await fetch("http://localhost:8088/orders");
+    // const orders = await fetchResponse.json();
 
-    
-//     let CustomOrdersHTML = orders.map((order) => {
-//         const orderPrice = order.food.price + order.drink.price + order.dessert.price + order.toy.price
-        
-//         const totalCustomOrder = orderPrice.toLocaleString("en-US", {
-//             style: "currency",
-//             currency: "USD"
-//         });
-        
-//         return `<div>Order #${order.id} cost ${totalCustomOrder}</div>`;
-//     }
-
-// );
-
-//     return CustomOrdersHTML.join("")
+    // const totalCustomOrder = orderTotalAmount.toLocaleString("en-US", {
+    //     style: "currency",
+    //     currency: "USD"
+    // })
+    //     return `<div>Order # cost ${totalCustomOrder}</div>`;
 }
 
 //place order button html
@@ -216,6 +210,6 @@ export const saveOrderPlaced = () => {
 
 document.addEventListener("click", handleOrderPlacedClick)
 
-return `<div><button type="button" class="btn btn-primary btn-lg">Place Order</button></div>`
+return `<div><button type="button" id="saveOrderButton" class="btn btn-primary btn-lg">Place Order</button></div>`
 
 }
