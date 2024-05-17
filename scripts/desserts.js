@@ -35,7 +35,6 @@ export const dessertOptions = async() => {
     const dessertsAvailableArray = dessertLocations.filter((dessertLocation) => dessertLocation.locationId === parseInt(chosenLocationId)) 
 
     html += `<select id="desserts"><option value=0>Select a Dessert Option</option>`
-    html += '<option value="0">Select a dessert</option>'
 
     for (let i=0; i < dessertsAvailableArray.length; i++) {
         for (const dessert of desserts) {
