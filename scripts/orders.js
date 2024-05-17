@@ -51,8 +51,7 @@ export const selectedToy = async () => {
     }
 };
 
-export const customOrders = async () => {
-//     // const fetchResponse = await fetch("http://localhost:8088/orders?_expand=food&_expand=drink&_expand=dessert&_expand=toy");
+
 //handle dessert change 
 const handleDessertChange = (changeDessert) => {
     if(changeDessert.target.id === 'desserts') {

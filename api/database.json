@@ -421,7 +421,7 @@
     }
   ],
   "orders": [
-    {}
+    {},
     {
       "locationId": 1,
       "foodLocationId": 2,
