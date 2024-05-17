@@ -18,6 +18,14 @@ export const setFood = (chosenFoodId) => {
     console.log(transientState)
 }
 
+export const setToy = (chosenToy) => {
+    transientState.toyLocationId = chosenToy
+    console.log(transientState)
+}
+
+
+
+
 export const saveOrder = async () => {
 
     const postOptions = {
@@ -33,5 +41,4 @@ export const saveOrder = async () => {
   const response = await fetch("http://localhost:8088/orders", postOptions)
   const customEvent = new CustomEvent("newOrder")
   document.dispatchEvent(customEvent)
-
 }
