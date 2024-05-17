@@ -40,8 +40,43 @@
         "price": "0",
         "pic": "https://c02.purpledshub.com/uploads/sites/48/2024/02/bootes-void-hole-in-space.jpg?w=1029&webp=1"
     }],
+    "drinks": [
+        {
+            "id": 1, 
+            "name": "Coke",
+            "price": 1.99,
+            "img": "'images/Coke.png'"
 
-    "drinks": [],
+        },
+        
+        {
+            "id": 2, 
+            "name": "Mellow Yellow",
+            "price": 1.99,
+            "img": "'/images/MellowYellow.png'"
+
+        },
+        
+        {
+            "id": 3, 
+            "name": "Dr. Pepper",
+            "price": 1.99,
+            "img": "'images/DrPepper.jpg'"
+        },
+
+        {
+            "id": 4,
+            "name": "none",
+            "price": 0,
+            "img": "none"
+        }
+
+    
+    ],
+  
+   
+
+    
 
     "desserts": [],
 
@@ -131,8 +166,106 @@
     ],
 
     "dessertLocations":[],
+    "drinkLocations":[
 
-    "drinkLocations":[],
+        {
+            "id": 1,
+            "locationId": 1,
+            "drinkId": 1, 
+            "quantity": 5
+
+        },
+
+        {
+            "id": 2,
+            "locationId": 1,
+            "drinkId": 2, 
+            "quantity": 25
+ 
+        },
+
+        {
+            "id": 3,
+            "locationId": 1,
+            "drinkId": 3, 
+            "quantity": 100
+
+        },
+
+        {
+            "id": 4,
+            "locationId": 1,
+            "drinkId": 4, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 5,
+            "locationId": 2,
+            "drinkId": 1, 
+            "quantity": 10
+
+        },
+
+        {
+            "id": 6,
+            "locationId": 2,
+            "drinkId": 2, 
+            "quantity": 5
+
+        },
+
+        {
+            "id": 7,
+            "locationId": 2,
+            "drinkId": 3, 
+            "quantity": 25
+
+        },
+
+        {
+            "id": 8,
+            "locationId": 2,
+            "drinkId": 4, 
+            "quantity": 20
+
+        },
+
+        {
+            "id": 9,
+            "locationId": 3,
+            "drinkId": 1, 
+            "quantity": 40
+
+        },
+
+        {
+            "id": 10,
+            "locationId": 3,
+            "drinkId": 2, 
+            "quantity": 0
+
+        },
+
+        {
+            "id": 11,
+            "locationId": 3,
+            "drinkId": 3, 
+            "quantity": 5
+
+        },
+
+        {
+            "id": 12,
+            "locationId": 3,
+            "drinkId": 4, 
+            "quantity": 10
+
+        }
+
+       
+    ],
 
     "toyLocations":[
         {"id": 1,
