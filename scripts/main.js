@@ -7,6 +7,8 @@ import {saveOrderPlaced} from "./orders.js"
 import { drinkOptions } from "./drinks.js";
 import { ToyOptions } from "./toys.js"
 
+import { selectedFood } from "./orders.js";
+import { selectedDessert } from "./orders.js";
 
 //query selector
 const container = document.querySelector('#container');
@@ -27,6 +29,7 @@ const render = async () => {
     const SelectedToy = await selectedToy();
     const orderTotalHTML = await orderTotal();
 
+    const chosenDessert = await selectedDessert();
     //main HTML string
     const containerHTML = `
     <article class="choices">
@@ -59,6 +62,7 @@ const render = async () => {
         ${SelectedDrink}
         ${SelectedDessert}
         ${SelectedToy}
+        ${chosenDessert}
     </div>
     <div class="orderTotal">
         <h2>Your Current Order Total: </h2>
@@ -89,5 +93,6 @@ document.addEventListener("foodChanged", render);
 document.addEventListener("drinkChanged", render);
 document.addEventListener("dessertChanged", render);
 document.addEventListener("toyChanged", render);
+document.addEventListener("dessertChanged", render);
 
 render();
