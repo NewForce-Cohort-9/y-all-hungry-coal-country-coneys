@@ -32,9 +32,9 @@ export const drinkOptions = async (change) => {
 
     for (let i=0; i < drinksAvailableArray.length; i++) {
         for (const drink of drinks) {
-            if (drinksAvailableArray[i].drinksId === drink.id) {
+            if (drinksAvailableArray[i].drinkId === drink.id) {
                drinkOptionsHTML += `<option value="${drinksAvailableArray[i].id}">
-               ${drink.name} - ${drink.description} - $${drink.price} - qty: ${drinksAvailableArray[i].quantity}
+               ${drink.name} -- $${drink.price} - qty: ${drinksAvailableArray[i].quantity}
                </option>`
             }
         }

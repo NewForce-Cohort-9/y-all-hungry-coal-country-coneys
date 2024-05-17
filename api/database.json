@@ -171,79 +171,79 @@
         {
             "id": 1,
             "locationId": 1,
-            "drinksId": 1, 
-            "quantity": 0
+            "drinkId": 1, 
+            "quantity": 5
 
         },
 
         {
             "id": 2,
-            "locationId": 2,
-            "drinksId": 2, 
-            "quantity": 0
+            "locationId": 1,
+            "drinkId": 2, 
+            "quantity": 25
  
         },
 
         {
             "id": 3,
-            "locationId": 3,
-            "drinksId": 3, 
-            "quantity": 0
+            "locationId": 1,
+            "drinkId": 3, 
+            "quantity": 100
 
         },
 
         {
             "id": 4,
-            "locationId": 4,
-            "drinksId": 4, 
+            "locationId": 1,
+            "drinkId": 4, 
             "quantity": 0
 
         },
 
         {
             "id": 5,
-            "locationId": 1,
-            "drinksId": 1, 
-            "quantity": 0
+            "locationId": 2,
+            "drinkId": 1, 
+            "quantity": 10
 
         },
 
         {
             "id": 6,
             "locationId": 2,
-            "drinksId": 2, 
-            "quantity": 0
+            "drinkId": 2, 
+            "quantity": 5
 
         },
 
         {
             "id": 7,
-            "locationId": 3,
-            "drinksId": 3, 
-            "quantity": 0
+            "locationId": 2,
+            "drinkId": 3, 
+            "quantity": 25
 
         },
 
         {
             "id": 8,
-            "locationId": 4,
-            "drinksId": 4, 
-            "quantity": 0
+            "locationId": 2,
+            "drinkId": 4, 
+            "quantity": 20
 
         },
 
         {
             "id": 9,
-            "locationId": 1,
-            "drinksId": 1, 
-            "quantity": 0
+            "locationId": 3,
+            "drinkId": 1, 
+            "quantity": 40
 
         },
 
         {
             "id": 10,
-            "locationId": 2,
-            "drinksId": 2, 
+            "locationId": 3,
+            "drinkId": 2, 
             "quantity": 0
 
         },
@@ -251,16 +251,16 @@
         {
             "id": 11,
             "locationId": 3,
-            "drinksId": 3, 
-            "quantity": 0
+            "drinkId": 3, 
+            "quantity": 5
 
         },
 
         {
             "id": 12,
-            "locationId": 4,
-            "drinksId": 4, 
-            "quantity": 0
+            "locationId": 3,
+            "drinkId": 4, 
+            "quantity": 10
 
         }
 
