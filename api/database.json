@@ -461,6 +461,14 @@
       "drinkLocationId": 2,
       "toyLocationId": 2,
       "id": 5
+    },
+    {
+      "locationId": 1,
+      "foodLocationId": 2,
+      "dessertLocationId": 3,
+      "drinkLocationId": 1,
+      "toyLocationId": 1,
+      "id": 6
     }
   ]
 }
