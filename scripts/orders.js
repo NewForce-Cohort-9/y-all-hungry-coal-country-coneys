@@ -23,7 +23,11 @@ export const selectedFood = async () => {
     
        foodSelectedHTML = `<div>${foodSelected?.food.name} <img src="${foodSelected?.food.pic}"></div>`
     }
-    return foodSelectedHTML;
+    else {
+        let foodSelectedHTML = ""
+
+        return foodSelectedHTML
+    }
 };
 
 //handle drink change
@@ -47,7 +51,11 @@ export const selectedDrink = async () => {
     
        drinkSelectedHTML = `<div>${drinkSelected?.drink.name} <img src="${drinkSelected?.drink.img}"></div>`
     }
-    return drinkSelectedHTML;
+    else {
+        let drinkSelectedHTML = ""
+
+        return drinkSelectedHTML
+    }
 };
 
 //handle dessert change
@@ -73,7 +81,11 @@ export const selectedDessert = async () => {
 
        dessertSelectedHTML = `<div>${dessertSelected?.dessert.name} <img src="${dessertSelected?.dessert.pic}"></div>`
     }
-    return dessertSelectedHTML;
+    else {
+        let dessertSelectedHTML = ""
+
+        return dessertSelectedHTML
+    }
 };
 
 //handle toy change
@@ -99,7 +111,11 @@ export const selectedToy = async () => {
     toySelectedHTML = `<div>${toySelected?.toy.name} <img src="${toySelected?.toy.img}"></div>`
     
     }
-    return toySelectedHTML;
+    else {
+        let toySelectedHTML = ""
+
+        return toySelectedHTML
+    }
 };
 
 // for order total 
