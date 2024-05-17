@@ -2,13 +2,14 @@ import { transientState } from "./transientState.js";
 import { setToy } from "./transientState.js";
 
 //set global variables
-let chosenLocationId = 0
+let chosenLocationId = 0;
+let chosenToyLocationId = 0;
 
 //handle location change
 const handleLocationChangeForToys = (change) => {
     if(change.target.id == 'location') {
         chosenLocationId = transientState.locationId;
-//add custome event for location change and filtered toys
+//add custom event for location change and filtered toys
         const customEventToys = new CustomEvent("newLocationSelectedToys");
         document.dispatchEvent(customEventToys);
     }
@@ -18,6 +19,7 @@ const handleLocationChangeForToys = (change) => {
 const handleToyChange = (changeToy) => {
     if(changeToy.target.id === 'toys') {
         setToy(parseInt(changeToy.target.value))
+        chosenToyLocationId = transientState.toyLocationId;
     }
 }
 
@@ -44,7 +46,7 @@ export const ToyOptions = async (change) => {
     for (let i=0; i < toysAvailableArray.length; i++) {
         for (const toy of toys) {
             if (toysAvailableArray[i].toyId === toy.id) {
-               toysHTML += `<option value="${toysAvailableArray[i].id}">
+               toysHTML += `<option value="${toysAvailableArray[i].id}" ${chosenToyLocationId === toysAvailableArray[i].id ? 'selected' : ""}>
                ${toy.name} - $${toy.price} - qty: ${toysAvailableArray[i].quantity}
                </option>`
             }

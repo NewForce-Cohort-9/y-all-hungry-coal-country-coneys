@@ -3,6 +3,7 @@ import { setFood } from "./transientState.js";
 
 // set global variables
 let chosenLocationId = 0;
+let chosenFoodLocationId = 0;
 
 // handle location change
 const handleLocationChangeForFoods = (change) => {
@@ -17,7 +18,8 @@ const handleLocationChangeForFoods = (change) => {
 //handle food change 
 const handleFoodChange = (changeFood) => {
     if(changeFood.target.id === 'foods') {
-       setFood(parseInt(changeFood.target.value))
+       setFood(parseInt(changeFood.target.value));
+       chosenFoodLocationId = transientState.foodLocationId;
        };
     };
 
@@ -43,9 +45,7 @@ export const foodOptions = async () => {
         for (const food of foods) {
             if (foodsAvailableArray[i].foodId === food.id) {
                foodsHTML += `<option value="${foodsAvailableArray[i].id}"
-                                data-name="${food.name}"
-                                data-description="${food.description}"
-                                data-price="${food.price}">
+               ${chosenFoodLocationId === foodsAvailableArray[i].id ? 'selected' : ""}>
                                 ${food.name} - ${food.description} - $${food.price} - qty: ${foodsAvailableArray[i].quantity}
                                 </option>`
             }
