@@ -48,19 +48,19 @@
       "id": 1,
       "name": "Coke",
       "price": 1.99,
-      "img": "'images/Coke.png'"
+      "img": "images/Coke.png"
     },
     {
       "id": 2,
       "name": "Mellow Yellow",
       "price": 1.99,
-      "img": "'/images/MellowYellow.png'"
+      "img": "/images/MellowYellow.png"
     },
     {
       "id": 3,
       "name": "Dr. Pepper",
       "price": 1.99,
-      "img": "'images/DrPepper.jpg'"
+      "img": "images/DrPepper.jpg"
     },
     {
       "id": 4,

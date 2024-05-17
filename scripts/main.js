@@ -1,6 +1,6 @@
 //import functions 
 import {dessertOptions} from "./desserts.js"
-import { customOrders } from "./orders.js"
+import { customOrders, selectedDrink, selectedFood, orderTotal, selectedDessert, selectedToy } from "./orders.js"
 import { foodOptions } from "./foods.js";
 import { LocationOptions } from "./locations.js"
 import {saveOrderPlaced} from "./orders.js"
@@ -9,6 +9,7 @@ import { ToyOptions } from "./toys.js"
 import { selectedFood } from "./orders.js";
 import { selectedToy } from "./orders.js";
 import { selectedDessert } from "./orders.js";
+
 
 //query selector
 const container = document.querySelector('#container');
@@ -25,7 +26,10 @@ const render = async () => {
     const Drinks = await drinkOptions();
     const SelectedFood = await selectedFood();
     const SelectedToy = await selectedToy();
+    const SelectedDrink = await selectedDrink();
+    const orderTotalHTML = await orderTotal();
     const chosenDessert = await selectedDessert();
+
     //main HTML string
     const containerHTML = `
     <article class="choices">
@@ -55,13 +59,14 @@ const render = async () => {
     <div class="orders_list">
         <h2>Your Current Order:</h2>
         ${SelectedFood}
+        ${SelectedDrink}
         ${chosenDessert}
         ${SelectedToy}
 
     </div>
     <div class="orderTotal">
         <h2>Your Current Order Total: </h2>
-    ${ordersHTML}
+        ${orderTotalHTML}
     </div>
     <div class="orderTotal">
     
@@ -86,6 +91,8 @@ document.addEventListener("newLocationSelectedDrinks", render);
 document.addEventListener("newLocationSelectedToys", render);
 document.addEventListener("foodChanged", render);
 document.addEventListener("toyChanged", render);
+document.addEventListener("drinkChanged", render);
 document.addEventListener("dessertChanged", render);
+document.addEventListener("toyChanged", render);
 
 render();

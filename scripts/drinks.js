@@ -2,6 +2,8 @@ import { transientState } from "./transientState.js";
 import { setDrinkChoice } from "./transientState.js";
 
 let chosenLocationId = 0;
+let chosenDrinkLocationId = 0;
+
 
 const handleLocationChangeForDrinks = (change) => {
     if(change.target.id === 'location') {
@@ -13,6 +15,7 @@ const handleLocationChangeForDrinks = (change) => {
      const handleDrinkChange = (changeDrink) => {
         if(changeDrink.target.id === 'drinks') {
             setDrinkChoice(parseInt(changeDrink.target.value))
+            chosenDrinkLocationId = transientState.drinkLocationId;
         }
     }
 export const drinkOptions = async (change) => {
@@ -33,7 +36,7 @@ export const drinkOptions = async (change) => {
     for (let i=0; i < drinksAvailableArray.length; i++) {
         for (const drink of drinks) {
             if (drinksAvailableArray[i].drinkId === drink.id) {
-               drinkOptionsHTML += `<option value="${drinksAvailableArray[i].id}">
+               drinkOptionsHTML += `<option value="${drinksAvailableArray[i].id}" ${chosenDrinkLocationId === drinksAvailableArray[i].id ? 'selected' : ""}>
                ${drink.name} -- $${drink.price} - qty: ${drinksAvailableArray[i].quantity}
                </option>`
             }
