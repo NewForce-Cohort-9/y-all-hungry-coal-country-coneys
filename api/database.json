@@ -225,5 +225,14 @@
   ],
   "drinkLocations": [],
   "toyLocations": [],
-  "orders": []
+  "orders": [
+    {
+      "locationId": 1,
+      "foodLocationId": 1,
+      "dessertLocationId": 0,
+      "drinkLocationId": 0,
+      "toyLocationId": 0,
+      "id": 1
+    }
+  ]
 }
