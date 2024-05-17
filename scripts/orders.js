@@ -16,12 +16,12 @@ export const selectedFood = async () => {
 
     document.addEventListener("change", handleFoodChange);
     
-    let foodSelectedHTML = ''
     if (transientState.foodLocationId !== 0) {
         const foodSelected = foodLocations.find((foodLocation) =>
             foodLocation.id === transientState.foodLocationId)
     
-       foodSelectedHTML = `<div>${foodSelected?.food.name} <img src="${foodSelected?.food.pic}"></div>`
+       let foodSelectedHTML = `<div>${foodSelected?.food.name} <img src="${foodSelected?.food.pic}"></div>`
+       return foodSelectedHTML
     }
     else {
         let foodSelectedHTML = ""
@@ -49,7 +49,8 @@ export const selectedDrink = async () => {
         const drinkSelected = drinkLocations.find((drinkLocation) =>
             drinkLocation.id === transientState.drinkLocationId)
     
-       drinkSelectedHTML = `<div>${drinkSelected?.drink.name} <img src="${drinkSelected?.drink.img}"></div>`
+      let drinkSelectedHTML = `<div>${drinkSelected?.drink.name} <img src="${drinkSelected?.drink.img}"></div>`
+      return drinkSelectedHTML
     }
     else {
         let drinkSelectedHTML = ""
@@ -79,7 +80,8 @@ export const selectedDessert = async () => {
         const dessertSelected = dessertLocations.find((dessertLocation) =>
             dessertLocation.id === transientState.dessertLocationId)
 
-       dessertSelectedHTML = `<div>${dessertSelected?.dessert.name} <img src="${dessertSelected?.dessert.pic}"></div>`
+       let dessertSelectedHTML = `<div>${dessertSelected?.dessert.name} <img src="${dessertSelected?.dessert.pic}"></div>`
+       return dessertSelectedHTML
     }
     else {
         let dessertSelectedHTML = ""
@@ -108,8 +110,9 @@ export const selectedToy = async () => {
         const toySelected = toyLocations.find((toyLocation) =>
             toyLocation.id === transientState.toyLocationId)
     
-    toySelectedHTML = `<div>${toySelected?.toy.name} <img src="${toySelected?.toy.img}"></div>`
-    
+   let toySelectedHTML = `<div>${toySelected?.toy.name} <img src="${toySelected?.toy.img}"></div>`
+   return toySelectedHTML
+   
     }
     else {
         let toySelectedHTML = ""
@@ -183,14 +186,14 @@ export const orderTotal = async () => {
 
 //display order on DOM
     export const customOrders = async () => {
-    const fetchResponse = await fetch("http://localhost:8088/orders");
-    const orders = await fetchResponse.json();
+    // const fetchResponse = await fetch("http://localhost:8088/orders");
+    // const orders = await fetchResponse.json();
 
-    const totalCustomOrder = orderTotalAmount.toLocaleString("en-US", {
-        style: "currency",
-        currency: "USD"
-    })
-        return `<div>Order # cost ${totalCustomOrder}</div>`;
+    // const totalCustomOrder = orderTotalAmount.toLocaleString("en-US", {
+    //     style: "currency",
+    //     currency: "USD"
+    // })
+    //     return `<div>Order # cost ${totalCustomOrder}</div>`;
 }
 
 //place order button html

@@ -65,7 +65,7 @@ const render = async () => {
         ${orderTotalHTML}
     </div>
     <div class="orderTotal">
-    
+
     </div>
     </article>
     <article class="buttons">
