@@ -1,6 +1,8 @@
 //import functions 
+
 import { foodOptions } from "./foods.js";
 import { LocationOptions } from "./locations.js"
+import { ToyOptions } from "./toys.js"
 
 //query selector
 const container = document.querySelector('#container');
@@ -8,8 +10,8 @@ const container = document.querySelector('#container');
 //render function
 const render = async () => {
     // add variables to generate HTML
-    
-    const locationOptionsHTML = await LocationOptions();
+    const locationOptionsHTML = await LocationOptions()
+    const toysHTML = await ToyOptions();
     const Foods = await foodOptions();
 
     //main HTML string
@@ -21,29 +23,29 @@ const render = async () => {
             <p id="selectedLocation"></p>
         </section>
         <section id="food" class="choices_item">
-        <h2>Food</h2>
-        ${Foods}
+            <h2>Food</h2>
+            ${Foods}
         </section>
         <section id="drink" class="choices_item">
-        <h2>Drink</h2>
+            <h2>Drink</h2>
 
         </section>
         <section id="dessert" class="choices_item">
-        <h2>Dessert</h2>
+            <h2>Dessert</h2>
 
         </section>
         <section id="toy" class="choices_item">
-        <h2>Toy</h2>
-
+            <h2>Toy</h2>
+            ${toysHTML}
         </section>
     </article>
     <article class="orders">
-    <div class="orders_list">
-    
-    </div>
-    <div class="orderTotal">
-    
-    </div>
+        <div class="orders_list">
+        
+        </div>
+        <div class="orderTotal">
+        
+        </div>
     </article>
     <article class="buttons">
   
@@ -53,11 +55,12 @@ const render = async () => {
         <div class="startOver">
         
         </div>
-        </article>
+    </article>
     `
     container.innerHTML = containerHTML;
 }
 
 document.addEventListener("newLocationSelectedFoods", render);
+document.addEventListener("newLocationSelectedToys", render);
 
 render();
