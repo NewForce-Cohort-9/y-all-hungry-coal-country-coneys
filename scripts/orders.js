@@ -27,6 +27,7 @@ export const selectedFood = async () => {
     }
 };
 
+// handle toy change 
 const handleToyChange = (changeToy) => {
     if(changeToy.target.id === 'toys') {
         const customEvent = new CustomEvent("toyChanged")
@@ -52,6 +53,34 @@ export const selectedToy = async () => {
 
 export const customOrders = async () => {
 //     // const fetchResponse = await fetch("http://localhost:8088/orders?_expand=food&_expand=drink&_expand=dessert&_expand=toy");
+//handle dessert change 
+const handleDessertChange = (changeDessert) => {
+    if(changeDessert.target.id === 'desserts') {
+        const customEvent = new CustomEvent("dessertChanged")
+        document.dispatchEvent(customEvent)
+        console.log("State Change HTML regenerating...")
+       };
+    };
+
+export const selectedDessert = async () => {
+    const response = await fetch('http://localhost:8088/dessertLocations?_expand=dessert');
+    const dessertLocations = await response.json();
+
+    document.addEventListener("change", handleDessertChange);
+    
+    if (transientState.dessertLocationId !== 0) {
+        const dessertSelected = dessertLocations.find((dessertLocation) =>
+            dessertLocation.id === transientState.dessertLocationId)
+    
+       let dessertSelectedHTML = `<div>${dessertSelected?.dessert.name} <img src="${dessertSelected?.dessert.pic}"></div>`
+    
+       return dessertSelectedHTML;
+    }
+};
+
+//display order on DOM
+    export const customOrders = async () => {
+//     const fetchResponse = await fetch("http://localhost:8088/orders?_expand=food&_expand=drink&_expand=dessert&_expand=toy");
 //     const orders = await fetchResponse.json();
 
     
@@ -82,6 +111,6 @@ export const saveOrderPlaced = () => {
 
 document.addEventListener("click", handleOrderPlacedClick)
 
-return "<div><button id ='saveOrderButton'>Place Order</button></div>"
+return `<div><button type="button" class="btn btn-primary btn-lg">Place Order</button></div>`
 
 }
