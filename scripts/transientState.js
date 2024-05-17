@@ -23,6 +23,11 @@ export const setDessert = (chosenDessertId) => {
     console.log(transientState)
 }
 
+export const setToy = (chosenToy) => {
+    transientState.toyLocationId = chosenToy
+    console.log(transientState)
+}
+
 export const saveOrder = async () => {
 
     const postOptions = {
