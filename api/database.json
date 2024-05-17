@@ -421,13 +421,6 @@
     }
   ],
   "orders": [
-    {
-      "locationId": 1,
-      "foodLocationId": 1,
-      "dessertLocationId": 1,
-      "drinkLocationId": 1,
-      "toyLocationId": 3,
-      "id": 1
-    }
+    {}
   ]
 }

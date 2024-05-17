@@ -14,15 +14,15 @@ const handleLocationChangeForFoods = (change) => {
     }
 };
 
-//handle food change - **************
+//handle food change 
 const handleFoodChange = (changeFood) => {
     if(changeFood.target.id === 'foods') {
-        setFood(parseInt(changeFood.target.value))
-    }
-};
+       setFood(parseInt(changeFood.target.value))
+       };
+    };
 
 //generate html based on location 
-export const foodOptions = async (change) => {
+export const foodOptions = async () => {
     const response = await fetch('http://localhost:8088/foods');
     const response2 = await fetch('http://localhost:8088/foodLocations');
     const foods = await response.json();
@@ -42,9 +42,12 @@ export const foodOptions = async (change) => {
     for (let i=0; i < foodsAvailableArray.length; i++) {
         for (const food of foods) {
             if (foodsAvailableArray[i].foodId === food.id) {
-               foodsHTML += `<option value="${foodsAvailableArray[i].id}">
-               ${food.name} - ${food.description} - $${food.price} - qty: ${foodsAvailableArray[i].quantity}
-               </option>`
+               foodsHTML += `<option value="${foodsAvailableArray[i].id}"
+                                data-name="${food.name}"
+                                data-description="${food.description}"
+                                data-price="${food.price}">
+                                ${food.name} - ${food.description} - $${food.price} - qty: ${foodsAvailableArray[i].quantity}
+                                </option>`
             }
         }
     }
