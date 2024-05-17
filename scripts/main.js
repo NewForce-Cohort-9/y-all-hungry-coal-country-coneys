@@ -6,9 +6,7 @@ import { LocationOptions } from "./locations.js"
 import {saveOrderPlaced} from "./orders.js"
 import { drinkOptions } from "./drinks.js";
 import { ToyOptions } from "./toys.js"
-import { selectedFood } from "./orders.js";
-import { selectedToy } from "./orders.js";
-import { selectedDessert } from "./orders.js";
+
 
 
 //query selector
