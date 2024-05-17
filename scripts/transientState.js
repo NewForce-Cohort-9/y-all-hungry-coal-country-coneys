@@ -16,6 +16,11 @@ export const setLocationChoice = (chosenLocationId) => {
 export const setFood = (chosenFoodId) => {
     transientState.foodLocationId = chosenFoodId
     console.log(transientState)
+    
+}
+export const setDessert = (chosenDessertId) => {
+    transientState.dessertLocationId = chosenDessertId
+    console.log(transientState)
 }
 
 export const setDrinkChoice = (chosenDrinkId) => {
@@ -27,9 +32,6 @@ export const setToy = (chosenToy) => {
     transientState.toyLocationId = chosenToy
     console.log(transientState)
 }
-
-
-
 
 export const saveOrder = async () => {
 

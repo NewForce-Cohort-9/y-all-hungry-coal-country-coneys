@@ -1,18 +1,18 @@
 {
-    "locations": [
-        {
-            "id": 1,
-            "cityStreet": "Capitol Street - Charleston, WV 25301"
-        },
-        {
-            "id": 2,
-            "cityStreet": "Pullman Square - Huntington, WV 25701"
-        },
-        {
-            "id": 3,
-            "cityStreet": "Mall Road - Morgantown, WV 26501"
-        }
-    ],
+  "locations": [
+      {
+          "id": 1,
+          "cityStreet": "Capitol Street - Charleston, WV 25301"
+      },
+      {
+          "id": 2,
+          "cityStreet": "Pullman Square - Huntington, WV 25701"
+      },
+      {
+          "id": 3,
+          "cityStreet": "Mall Road - Morgantown, WV 26501"
+      }
+  ],
 
     "foods": [
         {
@@ -73,99 +73,197 @@
 
     
     ],
+
+  "desserts": [
+    {
+      "id": 1,
+      "name": "Moonshine Brownies",
+      "description": " A fudgy chocolate, vanilla, and a hint of moonshine brownie",
+      "price": 8,
+      "pic": "images/moonshinebrownies.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Appalachian Apple Stack Cake",
+      "description": "With six layers of spice cake and an orchard's worth of apple butter, this Appalachian apple stack cake IS the party.",
+      "price": 9,
+      "pic": "images/applestackcake.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mad Hot Dogs",
+      "description": "A specialty donut that is long, split in the center and filled with cream.",
+      "price": 8,
+      "pic": "images/madhotdogs.jpg"
+    },
+    {
+      "id": 4,
+      "name": "None",
+      "description": "i want of nothing.",
+      "price": 0,
+      "pic": ""
+    }
+  ],
+
+  "toys": [
+      {"id": 1,
+      "name": "Playstation 5",
+      "price": 6,
+      "img": "https://media.direct.playstation.com/is/image/sierialto/PS5-Digital-Slim-Hero-Box-US-V2"},
+
+      {"id": 2,
+      "name": "iPad",
+      "price": 5,
+      "img": "https://m.media-amazon.com/images/I/61mjOsFlTbL._AC_SX466_.jpg"},
+
+      {"id": 3,
+      "name": "Bag of Broken Glass",
+      "price": 8,
+      "img": "https://media1.thehungryjpeg.com/thumbs2/ori_3492695_2600b795f3b46ed8a31f20563819784087d441ce_realistic-shattered-glass-transparent-broken-pieces-of-cracked-glassf.jpg"},
   
-   
+      {"id": 4,
+      "name": "None",
+      "price": 0}
+  ],
+  
+  "foodLocations":[
+      {
+          "id": 1,
+          "locationId": 1,
+          "foodId": 1,
+          "quantity": 5
+      },{
+          "id": 2,
+          "locationId": 1,
+          "foodId": 2,
+          "quantity": 4
+      },{
+          "id": 3,
+          "locationId": 1,
+          "foodId": 3,
+          "quantity": 5
+      },{
+          "id": 4,
+          "locationId": 1,
+          "foodId": 4,
+          "quantity": 4
+      },{
+          "id": 5,
+          "locationId": 2,
+          "foodId": 1,
+          "quantity": 7
+      },{
+          "id": 6,
+          "locationId": 2,
+          "foodId": 2,
+          "quantity": 8
+      },{
+          "id": 7,
+          "locationId": 2,
+          "foodId": 3,
+          "quantity": 7
+      },{
+          "id": 8,
+          "locationId": 2,
+          "foodId": 4,
+          "quantity": 8
+      },{
+          "id": 9,
+          "locationId": 3,
+          "foodId": 1,
+          "quantity": 4
+      },{
+          "id": 10,
+          "locationId": 3,
+          "foodId": 2,
+          "quantity": 5
+      },{
+          "id": 11,
+          "locationId": 3,
+          "foodId": 3,
+          "quantity": 4
+      },{
+          "id": 12,
+          "locationId": 3,
+          "foodId": 4,
+          "quantity": 5
+      }
+  ],
 
-    
-
-    "desserts": [],
-
-    "toys": [
-        {"id": 1,
-        "name": "Playstation 5",
-        "price": 6,
-        "img": "https://media.direct.playstation.com/is/image/sierialto/PS5-Digital-Slim-Hero-Box-US-V2"},
-
-        {"id": 2,
-        "name": "iPad",
-        "price": 5,
-        "img": "https://m.media-amazon.com/images/I/61mjOsFlTbL._AC_SX466_.jpg"},
-
-        {"id": 3,
-        "name": "Bag of Broken Glass",
-        "price": 8,
-        "img": "https://media1.thehungryjpeg.com/thumbs2/ori_3492695_2600b795f3b46ed8a31f20563819784087d441ce_realistic-shattered-glass-transparent-broken-pieces-of-cracked-glassf.jpg"},
-    
-        {"id": 4,
-        "name": "None",
-        "price": 0}
-    ],
-
-    "foodLocations":[
-        {
-            "id": 1,
-            "locationId": 1,
-            "foodId": 1,
-            "quantity": 5
-        },{
-            "id": 2,
-            "locationId": 1,
-            "foodId": 2,
-            "quantity": 4
-        },{
-            "id": 3,
-            "locationId": 1,
-            "foodId": 3,
-            "quantity": 5
-        },{
-            "id": 4,
-            "locationId": 1,
-            "foodId": 4,
-            "quantity": 4
-        },{
-            "id": 5,
-            "locationId": 2,
-            "foodId": 1,
-            "quantity": 7
-        },{
-            "id": 6,
-            "locationId": 2,
-            "foodId": 2,
-            "quantity": 8
-        },{
-            "id": 7,
-            "locationId": 2,
-            "foodId": 3,
-            "quantity": 7
-        },{
-            "id": 8,
-            "locationId": 2,
-            "foodId": 4,
-            "quantity": 8
-        },{
-            "id": 9,
-            "locationId": 3,
-            "foodId": 1,
-            "quantity": 4
-        },{
-            "id": 10,
-            "locationId": 3,
-            "foodId": 2,
-            "quantity": 5
-        },{
-            "id": 11,
-            "locationId": 3,
-            "foodId": 3,
-            "quantity": 4
-        },{
-            "id": 12,
-            "locationId": 3,
-            "foodId": 4,
-            "quantity": 5
-        }
-    ],
-
-    "dessertLocations":[],
+  "dessertLocations":[
+    {
+      "id": 1,
+      "locationId": 1,
+      "dessertId": 1,
+      "quantity": 10
+    },
+    {
+      "id": 2,
+      "locationId": 1,
+      "dessertId": 2,
+      "quantity": 8
+    },
+    {
+      "id": 3,
+      "locationId": 1,
+      "dessertId": 3,
+      "quantity": 10
+    },
+    {
+      "id": 4,
+      "locationId": 1,
+      "dessertId": 4,
+      "quantity": 9
+    },
+    {
+      "id": 5,
+      "locationId": 2,
+      "dessertId": 1,
+      "quantity": 7
+    },
+    {
+      "id": 6,
+      "locationId": 2,
+      "dessertId": 2,
+      "quantity": 13
+    },
+    {
+      "id": 7,
+      "locationId": 2,
+      "dessertId": 3,
+      "quantity": 6
+    },
+    {
+      "id": 8,
+      "locationId": 2,
+      "dessertId": 4,
+      "quantity": 8
+    },
+    {
+      "id": 9,
+      "locationId": 3,
+      "dessertId": 1,
+      "quantity": 5
+    },
+    {
+      "id": 10,
+      "locationId": 3,
+      "dessertId": 2,
+      "quantity": 7
+    },
+    {
+      "id": 11,
+      "locationId": 3,
+      "dessertId": 3,
+      "quantity": 9
+    },
+    {
+      "id": 12,
+      "locationId": 3,
+      "dessertId": 4,
+      "quantity": 10
+    }
+  ],
     "drinkLocations":[
 
         {

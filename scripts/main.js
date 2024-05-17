@@ -1,7 +1,10 @@
-//import function
-import { LocationOptions } from "./locations.js"
-import { drinkOptions } from "./drinks.js";
+//import functions 
+import {dessertOptions} from "./desserts.js"
+import { customOrders } from "./orders.js"
 import { foodOptions } from "./foods.js";
+import { LocationOptions } from "./locations.js"
+import {saveOrderPlaced} from "./orders.js"
+import { drinkOptions } from "./drinks.js";
 import { ToyOptions } from "./toys.js"
 
 //query selector
@@ -13,6 +16,9 @@ const render = async () => {
     const locationOptionsHTML = await LocationOptions()
     const toysHTML = await ToyOptions();
     const Foods = await foodOptions();
+    const dessertHTML = await dessertOptions()
+    const ordersHTML = await customOrders()
+    const orderButtonHTML = await saveOrderPlaced()
     const Drinks = await drinkOptions()
     //main HTML string
     const containerHTML = `
@@ -31,8 +37,8 @@ const render = async () => {
             ${Drinks}
         </section>
         <section id="dessert" class="choices_item">
-            <h2>Dessert</h2>
-
+        <h2>Dessert</h2>
+        ${dessertHTML}
         </section>
         <section id="toy" class="choices_item">
             <h2>Toy</h2>
@@ -40,17 +46,17 @@ const render = async () => {
         </section>
     </article>
     <article class="orders">
-        <div class="orders_list">
-        
-        </div>
-        <div class="orderTotal">
-        
-        </div>
+    <div class="orders_list">
+    ${ordersHTML}
+    </div>
+    <div class="orderTotal">
+    
+    </div>
     </article>
     <article class="buttons">
   
         <div class="placeOrder">
-        
+        ${orderButtonHTML}
         </div>
         <div class="startOver">
         
@@ -61,7 +67,9 @@ const render = async () => {
 }
 
 document.addEventListener("newLocationSelectedFoods", render);
+document.addEventListener("newLocationSelectedDesserts", render);
 document.addEventListener("newLocationSelectedDrinks", render);
 document.addEventListener("newLocationSelectedToys", render);
+
 
 render();
