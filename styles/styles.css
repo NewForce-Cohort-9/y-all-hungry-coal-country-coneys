@@ -21,10 +21,11 @@
     width: 49%;
 }
 
-.header--logo {
+#header--logo {
     display: flex; 
     background-repeat: no-repeat;
     background-position: center;
+    border: none;
     width: 85%;
     height: 100%;
     margin-left: 5rem;
