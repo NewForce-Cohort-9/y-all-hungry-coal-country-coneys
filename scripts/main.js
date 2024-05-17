@@ -67,7 +67,7 @@ const render = async () => {
         ${orderTotalHTML}
     </div>
     <div class="orderTotal">
-    
+
     </div>
     </article>
     <article class="buttons">
@@ -92,5 +92,6 @@ document.addEventListener("toyChanged", render);
 document.addEventListener("drinkChanged", render);
 document.addEventListener("dessertChanged", render);
 document.addEventListener("toyChanged", render);
+document.addEventListener("newOrder", render);
 
 render();
