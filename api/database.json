@@ -40,7 +40,44 @@
         "price": "0",
         "pic": "https://c02.purpledshub.com/uploads/sites/48/2024/02/bootes-void-hole-in-space.jpg?w=1029&webp=1"
     }],
-    "drinks": [],
+    "drinks": [
+        {
+            "id": 1, 
+            "name": "Coke",
+            "price": 1.99,
+            "img": "'images/Coke.png'"
+
+        },
+        
+        {
+            "id": 2, 
+            "name": "Mellow Yellow",
+            "price": 1.99,
+            "img": "'/images/MellowYellow.png'"
+
+        },
+        
+        {
+            "id": 3, 
+            "name": "Dr. Pepper",
+            "price": 1.99,
+            "img": "'images/DrPepper.jpg'"
+        },
+
+        {
+            "id": 4,
+            "name": "none",
+            "price": 0,
+            "img": "none"
+        }
+
+    
+    ],
+  
+   
+
+    
+
     "desserts": [],
 
     "toys": [
@@ -129,7 +166,6 @@
     ],
 
     "dessertLocations":[],
-
     "drinkLocations":[
 
         {
