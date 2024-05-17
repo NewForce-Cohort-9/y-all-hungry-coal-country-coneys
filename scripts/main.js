@@ -66,6 +66,8 @@ const render = async () => {
 }
 
 document.addEventListener("newLocationSelectedFoods", render);
+document.addEventListener("newLocationSelectedDesserts", render);
 document.addEventListener("newLocationSelectedToys", render);
+
 
 render();
