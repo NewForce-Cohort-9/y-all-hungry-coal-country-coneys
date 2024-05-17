@@ -31,11 +31,7 @@ export const selectedFood = async () => {
     }
 };
 
-// handle toy change - extra from Iris
-// const handleToyChange = (changeToy) => {
-//     if(changeToy.target.id === 'toys') {
-//         const customEvent = new CustomEvent("toyChanged")
-//handle drink change
+
 const handleDrinkChange = (changeDrink) => {
     if(changeDrink.target.id === 'drinks') {
         const customEvent = new CustomEvent("drinkChanged")
@@ -43,22 +39,6 @@ const handleDrinkChange = (changeDrink) => {
        };
     };
 
-    // extra from Iris
-// export const selectedToy = async () => {
-//     const response = await fetch('http://localhost:8088/toyLocations?_expand=toy');
-//     const toyLocations = await response.json();
-
-//     document.addEventListener("change", handleToyChange);
-    
-//     if (transientState.toyLocationId !== 0) {
-//         const toySelected = toyLocations.find((toyLocation) =>
-//             toyLocation.id === transientState.toyLocationId)
-    
-//        let toySelectedHTML = `<div>${toySelected?.toy.name} <img src="${toySelected?.toy.img}"></div>`
-    
-//        return toySelectedHTML;
-//     }
-// }
 
 
 //handle dessert change 
