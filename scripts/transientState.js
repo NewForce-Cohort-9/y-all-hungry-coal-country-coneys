@@ -19,7 +19,7 @@ export const setFood = (chosenFoodId) => {
 }
 
 export const setToy = (chosenToy) => {
-    transientState.toysId = chosenToy
+    transientState.toyLocationId = chosenToy
     console.log(transientState)
 }
 
