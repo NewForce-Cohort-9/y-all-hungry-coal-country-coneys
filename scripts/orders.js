@@ -178,7 +178,7 @@ export const orderTotal = async () => {
     }
 
     orderTotalAmount = foodCost + drinkCost + dessertCost + toyCost
-    orderTotalString += orderTotalAmount
+    orderTotalString += `$${orderTotalAmount}`
     orderTotalString += '</div>'
     return orderTotalString
 }

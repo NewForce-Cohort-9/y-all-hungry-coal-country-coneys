@@ -31,7 +31,7 @@ const render = async () => {
     //main HTML string
     const containerHTML = `
     <article class="choices">
-        <section id="location">
+        <section id="locationMenu">
             <h2>Choose A Pickup Location</h2>
             ${locationOptionsHTML}
             <p id="selectedLocation"></p>
