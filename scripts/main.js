@@ -1,9 +1,9 @@
 //import function
-
+import { LocationOptions } from "./locations.js"
 import { drinkOptions } from "./drinks.js";
 //import functions 
 import { foodOptions } from "./foods.js";
-import { LocationOptions } from "./locations.js"
+
 
 //query selector
 const container = document.querySelector('#container');
@@ -64,5 +64,5 @@ const render = async () => {
 }
 
 document.addEventListener("newLocationSelectedFoods", render);
-
+document.addEventListener("newLocationSelectedDrinks", render);
 render();
