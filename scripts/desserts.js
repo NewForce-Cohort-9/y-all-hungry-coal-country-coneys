@@ -4,8 +4,8 @@ import { setDessert, transientState } from "./transientState.js";
 let chosenLocationId = 0;
 
 //handle location change
-const handleLocationChange = (event) => {
-    if (event.target.id === "location") {
+const handleLocationChange = (change) => {
+    if (change.target.id === 'location') {
         chosenLocationId = transientState.locationId;
         
         //add custom event for location change and filtered food items
@@ -14,9 +14,9 @@ const handleLocationChange = (event) => {
     }
 };
 //handle dessert change
-const handleDessertChange = (event) => {
-    if (event.target.id === "dessert") {
-        setDessert(parseInt(event.target.value))
+const handleDessertChange = (changeDessert) => {
+    if (changeDessert.target.id === 'desserts') {
+        setDessert(parseInt(changeDessert.target.value))
 
     }
 };

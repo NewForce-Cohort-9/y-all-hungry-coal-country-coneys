@@ -4,10 +4,7 @@ import { customOrders } from "./orders.js"
 import { foodOptions } from "./foods.js";
 import { LocationOptions } from "./locations.js"
 import {saveOrderPlaced} from "./orders.js"
-//import function
-import { LocationOptions } from "./locations.js"
 import { drinkOptions } from "./drinks.js";
-import { foodOptions } from "./foods.js";
 import { ToyOptions } from "./toys.js"
 
 //query selector
@@ -22,7 +19,6 @@ const render = async () => {
     const dessertHTML = await dessertOptions()
     const ordersHTML = await customOrders()
     const orderButtonHTML = await saveOrderPlaced()
-
     const Drinks = await drinkOptions()
     //main HTML string
     const containerHTML = `
