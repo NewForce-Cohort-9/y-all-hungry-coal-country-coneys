@@ -24,6 +24,11 @@ export const selectedFood = async () => {
     
        return foodSelectedHTML;
     }
+    else {
+        let foodSelectedHTML = ""
+
+        return foodSelectedHTML
+    }
 };
 
 // handle toy change - extra from Iris
@@ -71,6 +76,11 @@ export const selectedDrink = async () => {
     
        return drinkSelectedHTML;
     }
+    else {
+        let drinkSelectedHTML = ""
+
+        return drinkSelectedHTML
+    }
 };
 
 //handle dessert change
@@ -97,6 +107,11 @@ export const selectedDessert = async () => {
 
        return dessertSelectedHTML;
     }
+    else {
+        let dessertSelectedHTML = ""
+
+        return dessertSelectedHTML
+    }
 };
 
 //handle toy change
@@ -121,6 +136,11 @@ export const selectedToy = async () => {
        let toySelectedHTML = `<div>${toySelected?.toy.name} <img src="${toySelected?.toy.img}"></div>`
     
        return toySelectedHTML;
+    }
+    else {
+        let toySelectedHTML = ""
+
+        return toySelectedHTML
     }
 };
 
