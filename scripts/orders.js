@@ -31,7 +31,7 @@ export const selectedFood = async () => {
     }
 };
 
-//handle drink change
+
 const handleDrinkChange = (changeDrink) => {
     if(changeDrink.target.id === 'drinks') {
         const customEvent = new CustomEvent("drinkChanged")
@@ -39,6 +39,9 @@ const handleDrinkChange = (changeDrink) => {
        };
     };
 
+
+
+//handle dessert change 
 export const selectedDrink = async () => {
     const response = await fetch('http://localhost:8088/drinkLocations?_expand=drink');
     const drinkLocations = await response.json();
