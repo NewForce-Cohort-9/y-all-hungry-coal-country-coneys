@@ -111,4 +111,29 @@ img {
     border-radius: 4px;
     padding: 5px;
     width: 150px; 
+    display: inline-block;
+}
+
+.orders_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.orders_list div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.orderTotal div {
+    font-family: "Comfortaa", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
 }
