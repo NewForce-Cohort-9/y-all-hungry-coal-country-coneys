@@ -114,6 +114,10 @@ img {
     display: inline-block;
 }
 
+.orders {
+    margin-top: 5rem;
+}
+
 .orders_list {
     display: flex;
     flex-direction: column;
@@ -136,4 +140,11 @@ img {
     line-height: 1.5;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    color:#484444;
+    background-color:#484444;
 }

@@ -56,11 +56,12 @@ const render = async () => {
     <article class="orders">
     <div class="orders_list">
         <h2>Your Current Order:</h2>
+        <hr/>
         ${SelectedFood}
         ${SelectedDrink}
         ${chosenDessert}
         ${SelectedToy}
-
+        <hr/>
     </div>
     <div class="orderTotal">
         <h2>Your Current Order Total: </h2>
